@@ -16,7 +16,7 @@ class bank{
 		int a_id;
 		void display_bankname()
 		{
-			cout<<"\t\t\t\t\t******Government Bank Of India******\t\t\t\t\t"<<endl<<endl;
+			cout<<"\t\t\t\t\t******Bank Name******\t\t\t\t\t"<<endl<<endl;
 			cout<<endl;
 		}
 		
@@ -55,16 +55,16 @@ class bank{
 		   cout<<endl;
 		   
 		}
-		void search(){
-			cout<<"\tEnter the Account ID For search:";
-			cin>>a_id;
-			if(a_id==acc_id){
-				display_details();
-			}
-			else{
-				cout<<"\tNot Valid!!";
-			}
-		}
+// 		void search(){
+// 			cout<<"\tEnter the Account ID For search:";
+// 			cin>>a_id;
+// 			if(a_id==acc_id){
+// 				display_details();
+// 			}
+// 			else{
+// 				cout<<"\tNot Valid!!";
+// 			}
+// 		}
 		void deposite(){
 	       cout<<endl;
 		   cout<<"\tEnter The Money you want to deposite now:";
@@ -92,10 +92,10 @@ class bank{
 			cout<<"\tPhone No:"<<pho_no<<endl;
 			cout<<"\tAvailable Balance:"<<dp_mon<<endl;
 		}
-		void Money_transfer()
-		{    
-			cout<<"\tEnter The account number From which you want to take Money:";
-		}
+// 		void Money_transfer()
+// 		{    
+// 			cout<<"\tEnter The account number From which you want to take Money:";
+// 		}
 	
 	
 };
@@ -124,8 +124,8 @@ int main()
 		cout<<"2: Deposit Money"<<endl;
 		cout<<"3: Withdrawal Money"<<endl;
 		cout<<"4: Display Details"<<endl;
-		cout<<"5: Search Record"<<endl;
-		cout<<"6: Exit"<<endl;
+// 		cout<<"5: Search Record"<<endl;
+		cout<<"5: Exit"<<endl;
 		cout<<"Enter the Choice";
 		cin>>ch;
 		switch(ch)
@@ -143,13 +143,13 @@ int main()
 			break;	
 			
 			case 4:
-            b.display_details();
+            		b.display_details();
 			break;	
-			
+
+// 			case 5:
+// 				b.search();
+// 				break;
 			case 5:
-				b.search();
-				break;
-			case 6:
 				exit(0);
 		}
 }while(ch!=5);
